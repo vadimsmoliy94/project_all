@@ -1,38 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
 .App {
   text-align: center;
+  display: flex;
+  align-items: flex-start;
+  background: rgb(219, 216, 216);
+  width: 1360px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Left-bar{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  width: 315px;
+  height: 315px;
+  background:white;
+}
+.Types-list{
+  list-style-type: none;
+}
+.Check{
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+
+}
+.Types-li{
+  display: flex;
+  align-items: flex-start;
+  
+  margin-top: 10px;
+}
+.Image-left-bar{
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+}
+.Label-left-bar{
+  margin-left: 15px;
+  font-size: 15px;
+}
+.Title-left-bar{
+  margin-left: 20px;
+  margin-top: 15px;
+  
+}
+/* -------------------------------------------------------------- */
+.Main {
+  display: flex;
+  flex-direction: row;
+   flex-wrap: wrap; 
+  /* align-items: flex-start; */
+  align-content: stretch;
+  width: 1000px;
+  min-height: 285px;
+  
+  margin-left: 15px;
+  justify-self: stretch;
+
+}
+.Blok-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 265px;
+height: 300px;
+margin-left: 20px;
+  margin-top: 15px;
+  background: white;
+}
+.Image-blok{
+  width: 265px;
+  max-height: 265px;
+}
+.Image{
+  width: 265px;
+  max-height: 200px;
+  
+}
+.Blok-wrap{
+display: flex;
+margin-top: 5px;
+margin-left: 5px;
+}
+.link-blok{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-size: 14px;
+  
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.Link-article-blok{
+  
+  
+  margin-top: 5px;
+  margin-left: 5px;
+  
+}
+.Link-article-blok-wrap{
+  display: flex;
+  align-items: flex-start;
+  border-top: 2px solid rgb(116, 114, 114);
+}
+.Image-article-bar{
+  margin-left: 5px;
+  width: 20px;
+  height: 30px;
+  margin-top: 5px;
+}
+.Link-article-title{
+  font-size: 15px;
+  align-self: flex-start;
+  text-align: left;
+}
+.description-blok{
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 250px;
+  
+}
+.description-blok-wrap{
+  display: flex;
+  margin-left: 10px;
+}
+/* ----------------------------------------------------------- */
+.Tags-click{
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.Tags-blok-content{
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.Tags-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgb(238, 239, 241);
+  
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.Tags-content-wrap{
+  display: flex;
+  max-width: 150;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 1px solid rgb(75, 73, 73);
+}
+/* ------------------------------------- */
+.Download-button{
+  width: 150px;
+    height: 40px;
+background: black;
+color: white;
+border-radius: 10px;
+border: 2px solid white;
+align-self: center;
+  
+}
+.Use-button{
+  width: 150px;
+    height: 40px;
+background: rgb(111, 27, 247);
+color: white;
+border-radius: 10px;
+align-self: center;
+}
+
+.Blok-content:hover .Active-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Active-content{
+  width: 265px;
+  height: 240px;
+  display: none;
+  
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+}
+.Buton-save{
+  width: 20px;
+  height: 30px;
+  clip-path: polygon(100% 0%, 100% 97%, 50% 70%, 0 100%, 0 0);
+  /* border: 2px solid white; */
+  background: rgb(255, 255, 255);
+  /* background: rgb(27, 161, 56); */
+}
+.Button-save-active{
+  background: rgb(5, 173, 42);
+  border: 1px solid rgb(0, 0, 0);
+}
+.Button-save-wrap{
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.Total-caunt-blok{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.Total-blok{
+  margin-bottom: 10px;
+  margin-left: 10px;
   color: white;
+  font-size: 15px;
 }
+.Count-blok{
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
 }
